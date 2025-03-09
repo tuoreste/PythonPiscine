@@ -16,3 +16,5 @@ check-venv:
 	else \
 		printf "$(GREEN)✅ Virtual env is active: $$VIRTUAL_ENV$(RESET)\n"; \
 	fi
+
+#norminette=flake8
