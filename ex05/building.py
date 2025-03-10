@@ -27,11 +27,11 @@ def main():
 
         for c in args[1]:
             count['tot']+=1
-            if (ord(c) >= 65 and ord(c) <= 90): count['u'] += 1
-            elif (ord(c) == 46 or ord(c) == 63 or ord(c) == 33): count['p'] += 1
-            elif (ord(c) >= 97 and ord(c) <= 122): count['l'] += 1
-            elif (ord(c) >= 48 and ord(c) <= 57): count['d'] += 1
-            elif (ord(c) == 32): count['s'] += 1
+            if c in u: count['u'] += 1
+            elif c in p: count['p'] += 1
+            elif c in l: count['l'] += 1
+            elif c in d: count['d'] += 1
+            elif c == s: count['s'] += 1
             else: assert False, f"I do not understand -> {c}."
 
         print(f'The text contains {count['tot']} characters:\n {count['u']} upper letters\
