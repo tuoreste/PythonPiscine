@@ -3,8 +3,8 @@ import string
 from collections import Counter
 
 def main():
-    '''displays the sums of its upper-case chars, lower-case
-    chars, punctuation chars, digits and spaces.'''
+    """displays the sums of its upper-case chars, lower-case
+    chars, punctuation chars, digits and spaces."""
 
     args = sys.argv
     try:
@@ -41,4 +41,5 @@ def main():
         print(msg)
 
 if __name__ == "__main__":
+    print(f'{__doc__} \n')
     main()
